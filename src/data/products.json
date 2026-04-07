@@ -4,7 +4,7 @@
     "name": "Cappuccino",
     "price": 9.90,
     "category": "cafes",
-    "description": "Café espresso com leite vaporizado e espuma cremosa.",
+    "description": "Café espresso com leite vaporizado.",
     "image": "/images/cappuccino.jpg"
   },
   {
@@ -22,5 +22,13 @@
     "category": "padaria",
     "description": "Croissant amanteigado assado na hora.",
     "image": "/images/croissant.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Pão de Queijo",
+    "price": 8.50,
+    "category": "padaria",
+    "description": "Delicia.",
+    "image": "/images/.jpg"
   }
 ]

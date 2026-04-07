@@ -1,9 +1,32 @@
-function Header() {
+import CategoryFilter from "./CategoryFilter"
+
+function Header({ setCategory, darkMode, setDarkMode }) {
   return (
-    <div className="header">
-      <h1>☕ Café da Vila</h1>
-      <p>Escolha seu pedido</p>
-    </div>
+    <header className="header">
+
+      {/* ESQUERDA */}
+      <div className="header-left">
+        <img src="/images/logo.png" alt="Logo" className="logo" />
+        <h1>Café da Vila</h1>
+
+        <p>A melhor cafeteria de Vitória</p>
+      </div>
+
+      {/* DIREITA */}
+      <div className="header-right">
+  <CategoryFilter setCategory={setCategory} />
+
+  <button
+    className="theme-toggle"
+    onClick={() => setDarkMode(!darkMode)}
+  >
+    {darkMode ? "☀️" : "🌙"}
+  </button>
+  
+
+      </div>
+
+    </header>
   )
 }
 

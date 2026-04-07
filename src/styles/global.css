@@ -28,6 +28,85 @@ body {
 }
 
 /* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.header-left h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+/* 🌙 Dark Mode */
+.theme-toggle {
+  border: none;
+  background: #6b3e2e;
+  color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+body.dark {
+  background: linear-gradient(
+    180deg,
+    #1a1a1a,
+    #0f0f0f
+  );
+}
+
+body.dark .menu {
+  background: rgba(30, 30, 30, 0.7);
+}
+
+body.dark .product-card,
+body.dark .cart-content,
+body.dark .search-bar {
+  background: #1e1e1e;
+  color: white;
+}
+
+body.dark .categories button {
+  background: #2a2a2a;
+  color: white;
+}
+
+body.dark .cart-bar {
+  background: #2a2a2a;
+}
+
+body.dark .input {
+  background: #2a2a2a;
+  color: white;
+}
+/* 🌙 Dark Mode */
+
+/* Título do Café */
 .header h1 {
   margin: 0;
   font-size: 22px;
@@ -38,17 +117,18 @@ body {
   font-size: 14px;
   margin-bottom: 10px;
 }
+/* Título do Café */
 
 /* Busca */
 .search-bar {
-  width: 100%;
+  width: 98%;
   padding: 12px;
   border-radius: 12px;
   border: none;
   margin: 12px 0;
   background: white;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  font-size: 14px;
+  font-size: 14px;  
 }
 
 /* Categorias */
@@ -264,39 +344,6 @@ body {
   }
 }
 
-/* 🌙 DARK MODE */
-body.dark {
-  background: linear-gradient(
-    180deg,
-    #1a1a1a,
-    #0f0f0f
-  );
-}
-
-body.dark .menu {
-  background: rgba(30, 30, 30, 0.7);
-}
-
-body.dark .product-card,
-body.dark .cart-content,
-body.dark .search-bar {
-  background: #1e1e1e;
-  color: white;
-}
-
-body.dark .categories button {
-  background: #2a2a2a;
-  color: white;
-}
-
-body.dark .cart-bar {
-  background: #2a2a2a;
-}
-
-body.dark .input {
-  background: #2a2a2a;
-  color: white;
-}
 
 /* COMPUTADOR */
 
@@ -333,5 +380,22 @@ body.dark .input {
 @media (min-width: 768px) {
   .cart-content {
     max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-nav {
+    overflow-x: auto;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
   }
 }
