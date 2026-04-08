@@ -104,9 +104,8 @@ body.dark .input {
   background: #2a2a2a;
   color: white;
 }
-/* 🌙 Dark Mode */
 
-/* Título do Café */
+/* Título do Cardárpio */
 .header h1 {
   margin: 0;
   font-size: 22px;
@@ -117,7 +116,7 @@ body.dark .input {
   font-size: 14px;
   margin-bottom: 10px;
 }
-/* Título do Café */
+/* Título do Cardárpio */
 
 /* Busca */
 .search-bar {
@@ -140,7 +139,7 @@ body.dark .input {
 }
 
 .categories button {
-  background: white;
+    background: white;
   border-radius: 20px;
   padding: 8px 14px;
   white-space: nowrap;
@@ -214,10 +213,10 @@ body.dark .input {
 
 /* Carrinho fixo */
 .cart-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: sticky;
+  bottom: 16px;
+
+  margin-top: 20px;
 
   background: #6b3e2e;
   color: white;
@@ -227,15 +226,11 @@ body.dark .input {
   align-items: center;
 
   padding: 14px 16px;
-  border-radius: 16px 16px 0 0;
+  border-radius: 16px;
 }
 
-.cart-bar button {
-  background: white;
-  color: #6b3e2e;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 8px;
+.cart-bar:active {
+  transform: translateX(-50%) scale(0.98);
 }
 
 /* Modal */
@@ -344,8 +339,7 @@ body.dark .input {
   }
 }
 
-
-/* COMPUTADOR */
+/* Responsividade do Celular/Computador/Tablet */
 
 @media (min-width: 768px) {
   .menu {
@@ -354,6 +348,35 @@ body.dark .input {
 
   .product-card {
     margin-bottom: 0;
+  }
+
+  .cart-bar {
+    max-width: 600px;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+  }
+
+    .cart-content {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-nav {
+    overflow-x: auto;
+  }
+  
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
   }
 }
 
@@ -364,38 +387,5 @@ body.dark .input {
 
   .product-list {
     grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 768px) {
-  .cart-bar {
-    max-width: 600px;
-    margin: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 20px;
-  }
-}
-
-@media (min-width: 768px) {
-  .cart-content {
-    max-width: 500px;
-  }
-}
-
-@media (max-width: 768px) {
-  .menu-nav {
-    overflow-x: auto;
-  }
-
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-
-  .header-right {
-    width: 100%;
-    justify-content: space-between;
   }
 }

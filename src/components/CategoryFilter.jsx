@@ -2,9 +2,9 @@ function CategoryFilter({ setCategory }) {
   return (
     <div className="categories">
       <button onClick={() => setCategory("todos")}>Todos</button>
-      <button onClick={() => setCategory("cafes")}>☕ Cafés</button>
-      <button onClick={() => setCategory("padaria")}>🥐 Padaria</button>
-      <button onClick={() => setCategory("sobremesas")}>🍰 Sobremesas</button>
+      <button onClick={() => setCategory("cafe")}>Cafés</button>
+      <button onClick={() => setCategory("salgado")}>Salgados</button>
+      <button onClick={() => setCategory("sobremesa")}>Sobremesas</button>
     </div>
   )
 }

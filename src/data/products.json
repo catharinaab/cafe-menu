@@ -1,34 +1,162 @@
 [
   {
     "id": 1,
-    "name": "Cappuccino",
+    "name": "Café Tradicional",
     "price": 9.90,
-    "category": "cafes",
-    "description": "Café espresso com leite vaporizado.",
-    "image": "/images/cappuccino.jpg"
+    "category": "cafe",
+    "description": "Torra escura, sabor intenso e encorpado.",
+    "image": "/images/cafe-tradicional.jpg"
   },
   {
     "id": 2,
-    "name": "Latte",
+    "name": "Café Gourmet",
     "price": 10.90,
-    "category": "cafes",
-    "description": "Café suave com bastante leite vaporizado.",
-    "image": "/images/latte.jpg"
+    "category": "cafe",
+    "description": "Grãos selecionados com aroma suave e equilibrado.",
+    "image": "/images/cafe-gourmet.jpeg"
   },
   {
     "id": 3,
     "name": "Croissant",
     "price": 8.50,
-    "category": "padaria",
+    "category": "salgado",
     "description": "Croissant amanteigado assado na hora.",
     "image": "/images/croissant.jpg"
   },
   {
     "id": 4,
     "name": "Pão de Queijo",
-    "price": 8.50,
-    "category": "padaria",
-    "description": "Delicia.",
-    "image": "/images/.jpg"
+    "price": 6.50,
+    "category": "salgado",
+    "description": "Clássico mineiro, crocante por fora e macio por dentro.",
+    "image": "/images/pao-de-queijo.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Cappuccino",
+    "price": 12.50,
+    "category": "cafe",
+    "description": "Café espresso com leite vaporizado e espuma cremosa.",
+    "image": "/images/cappuccino.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Latte",
+    "price": 11.50,
+    "category": "cafe",
+    "description": "Café suave com bastante leite vaporizado.",
+    "image": "/images/latte.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Expresso",
+    "price": 7.50,
+    "category": "cafe",
+    "description": "Café curto, intenso e concentrado.",
+    "image": "/images/expresso.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Macchiato",
+    "price": 9.50,
+    "category": "cafe",
+    "description": "Expresso com um toque de leite vaporizado.",
+    "image": "/images/macchiato.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Mocha",
+    "price": 13.50,
+    "category": "cafe",
+    "description": "Café com chocolate e leite vaporizado.",
+    "image": "/images/mocha.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Americano",
+    "price": 8.00,
+    "category": "cafe",
+    "description": "Expresso diluído em água quente.",
+    "image": "/images/americano.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Pingado",
+    "price": 7.00,
+    "category": "cafe",
+    "description": "Café com um toque de leite, tradicional brasileiro.",
+    "image": "/images/cafe-pingado.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Sanduíche Natural",
+    "price": 14.90,
+    "category": "salgado",
+    "description": "Pão integral com frango desfiado e salada.",
+    "image": "/images/sanduiche-natural.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Tosta de Queijo",
+    "price": 12.00,
+    "category": "salgado",
+    "description": "Pão artesanal tostado com queijo derretido.",
+    "image": "/images/tosta-de-queijo.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Empada de Frango",
+    "price": 9.00,
+    "category": "salgado",
+    "description": "Empada cremosa com recheio de frango.",
+    "image": "/images/empada-de-frango.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Quiche de Alho Poró",
+    "price": 13.50,
+    "category": "salgado",
+    "description": "Torta salgada leve com recheio de alho poró.",
+    "image": "/images/quiche-de-alho-poro.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Brownie",
+    "price": 10.00,
+    "category": "sobremesa",
+    "description": "Brownie de chocolate intenso, macio por dentro.",
+    "image": "/images/brownie.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Cheesecake",
+    "price": 14.00,
+    "category": "sobremesa",
+    "description": "Cheesecake com calda de frutas vermelhas.",
+    "image": "/images/cheesecake.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Bolo de Cenoura",
+    "price": 9.50,
+    "category": "sobremesa",
+    "description": "Bolo fofinho com cobertura de chocolate.",
+    "image": "/images/bolo-de-cenoura.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Cookie",
+    "price": 7.50,
+    "category": "sobremesa",
+    "description": "Cookie crocante com gotas de chocolate.",
+    "image": "/images/cookie.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Torta de Limão",
+    "price": 11.00,
+    "category": "sobremesa",
+    "description": "Torta refrescante com creme de limão e merengue.",
+    "image": "/images/torta-de-limao.jpg"
   }
 ]
