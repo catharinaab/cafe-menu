@@ -106,6 +106,10 @@ body.dark .input {
   color: white;
 }
 
+body.dark .header-left h1 {
+  color: white;
+}
+
 /* Título do Cardárpio */
 .header h1 {
   margin: 0;
@@ -153,6 +157,39 @@ body.dark .input {
   align-items: center;
   height: 36px;
   margin-top: 2px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.categories button span {
+  display: inline-block;
+  transition: all 0.25s ease;
+}
+
+.categories button::after {
+  content: attr(data-emoji);
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%) scale(0.6);
+  opacity: 0;
+
+  font-size: 20px; 
+
+  transition: all 0.25s ease;
+}
+
+.categories button:hover span {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.categories button:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 /* Card */
@@ -244,9 +281,9 @@ body.dark .input {
 
 .cart-bar button {
   background: white;
-  color: #2c2c2c; /* preto mais suave */
+  color: #2c2c2c; 
 
-  border: 2px solid #6b3e2e; /* marrom */
+  border: 2px solid #6b3e2e; 
 
   padding: 8px 14px;
   border-radius: 10px;
