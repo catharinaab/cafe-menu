@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
 
   background: 
@@ -58,6 +58,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 6px;
 }
 
 
@@ -120,6 +121,7 @@ body.dark .input {
 
 /* Busca */
 .search-bar {
+  font-family: 'Montserrat', sans-serif;
   width: 98%;
   padding: 12px;
   border-radius: 12px;
@@ -133,18 +135,24 @@ body.dark .input {
 /* Categorias */
 .categories {
   display: flex;
-  gap: 8px;
+  align-items: center;
+  gap: 9px;
   overflow-x: auto;
   margin-bottom: 12px;
 }
 
 .categories button {
-    background: white;
+  font-family: 'Montserrat', sans-serif;
+  background: white;
   border-radius: 20px;
   padding: 8px 14px;
   white-space: nowrap;
   font-size: 13px;
   border: none;
+  display: flex;
+  align-items: center;
+  height: 36px;
+  margin-top: 2px;
 }
 
 /* Card */
@@ -234,6 +242,31 @@ body.dark .input {
   transform: translateX(-50%) scale(0.98);
 }
 
+.cart-bar button {
+  background: white;
+  color: #2c2c2c; /* preto mais suave */
+
+  border: 2px solid #6b3e2e; /* marrom */
+
+  padding: 8px 14px;
+  border-radius: 10px;
+
+  font-weight: 600;
+  font-size: 13px;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cart-bar button:active {
+  transform: scale(0.96);
+  background: #f8f5f3;
+}
+
+.cart-bar button:hover {
+  background: #f3ebe7;
+}
+
 /* Modal */
 .cart-modal {
   position: fixed;
@@ -242,17 +275,21 @@ body.dark .input {
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   animation: fadeIn 0.2s ease;
 }
 
 .cart-content {
+  position: sticky;
+  top: 100px; /* distância do topo */
+
   background: white;
   width: 90%;
   max-width: 400px;
   border-radius: 16px;
   padding: 20px;
+
   animation: slideUp 0.25s ease;
 
   max-height: 80vh;
@@ -371,8 +408,8 @@ body.dark .input {
   
   .header {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+    align-items: stretch;
+    gap: 10px;
   }
   
   .header-right {
