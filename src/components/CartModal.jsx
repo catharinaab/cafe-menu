@@ -5,8 +5,6 @@ function CartModal({ cart, removeFromCart, addToCart, onClose }) {
 const [name, setName] = useState("")
 const [table, setTable] = useState("")
 
-
-
 function sendToWhatsApp() {
     if (!name) {
   alert("Por favor, informe seu nome")
@@ -14,11 +12,11 @@ function sendToWhatsApp() {
 }
   const phone = "5599999999999"
 
-  let message = "☕ *Pedido - Café da Vila*%0A%0A"
+  let message = "*Pedido - Café da Vila*%0A%0A"
 
-  message += `👤 Nome: ${name || "Não informado"}%0A`
+  message += `Nome: ${name || "Não informado"}%0A`
   if (table) {
-    message += `🪑 Mesa: ${table}%0A`
+    message += `Mesa: ${table}%0A`
   }
 
   message += "%0A"
@@ -84,7 +82,7 @@ function sendToWhatsApp() {
         Finalizar pelo WhatsApp
         </button>
 
-        <button onClick={onClose}>
+        <button className="close-modal" onClick={onClose}>
           Fechar
         </button>
 

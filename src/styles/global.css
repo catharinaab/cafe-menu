@@ -364,6 +364,20 @@ body.dark .header-left h1 {
   border: none;
   background: #6b3e2e;
   color: white;
+  font-size: 20px; 
+}
+
+.close-modal {
+  margin-top: 15px;
+  background: #6b3e2e;
+  color: white; 
+  border: 2px solid #6b3e2e; 
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 /* Botão WhatsApp */
@@ -381,6 +395,7 @@ body.dark .header-left h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .whatsapp-btn:active {
@@ -389,12 +404,13 @@ body.dark .header-left h1 {
 
 /* Inputs */
 .input {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
   border: none;
   background: #f0f0f0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Animações */
