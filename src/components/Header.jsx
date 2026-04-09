@@ -6,7 +6,7 @@ function Header({ setCategory, darkMode, setDarkMode }) {
 
       {/* ESQUERDA */}
       <div className="header-left">
-        <img src="/images/logo.png" alt="Logo" className="logo" />
+        <img src="/images/cardapio-digital.png" alt="Logo" className="logo" />
         <h1>Menu - Café da Vila</h1>
 
         <p>A melhor cafeteria de Vitória</p>
