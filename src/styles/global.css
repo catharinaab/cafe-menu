@@ -279,7 +279,7 @@ body.dark .header-left h1 {
 }
 
 .cart-bar:active {
-  transform: scale(0.98);
+  transform: translateX(-50%) scale(0.98);
 }
 
 .cart-bar button {
@@ -321,7 +321,7 @@ body.dark .header-left h1 {
 }
 
 .cart-content {
-  position: relative;
+  position: sticky;
   top: 100px; /* distância do topo */
 
   background: white;
