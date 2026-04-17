@@ -443,9 +443,9 @@ body.dark .header-left h1 {
 
   .cart-bar {
     max-width: 600px;
-    margin: 20px auto;
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 20px;
   }
 
