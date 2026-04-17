@@ -448,6 +448,7 @@ body.dark .header-left h1 {
     max-width: 600px;
     margin: auto;
     left: 50%;
+    transform: translateX(-50%);
     border-radius: 20px;
   }
 
