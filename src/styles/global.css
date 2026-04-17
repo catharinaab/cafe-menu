@@ -259,10 +259,18 @@ body.dark .header-left h1 {
 
 /* Carrinho fixo */
 .cart-bar {
-  position: sticky;
+  position: fixed;
   bottom: 16px;
 
-  margin-top: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+    width: calc(100% - 20px);
+  max-width: 400px;
+
+  z-index: 10;
+
+  /* margin-top: 20px;
 
   background: #6b3e2e;
   color: white;
@@ -272,7 +280,7 @@ body.dark .header-left h1 {
   align-items: center;
 
   padding: 14px 16px;
-  border-radius: 16px;
+  border-radius: 16px; */
 }
 
 .cart-bar:active {
@@ -443,9 +451,9 @@ body.dark .header-left h1 {
 
   .cart-bar {
     max-width: 600px;
-    margin: auto;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 20px auto;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
     border-radius: 20px;
   }
 
